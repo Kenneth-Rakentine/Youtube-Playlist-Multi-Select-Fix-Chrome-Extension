@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Playlist Multi-Select",
+  "version": "3.4.2",
+  "description": "Keeps YouTube\u2019s \u201cSave to playlist\u201d menu open for multiple selections. Runs locally only. Optional icon-refresh toggle.",
+  "author": "Community",
+  "homepage_url": "https://github.com/",
+  "permissions": [],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+"action": {
+  "default_title": "YouTube Playlist Multi-Select",
+  "default_icon": {
+    "16": "icon16.png",
+    "24": "icon24.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+},
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "offline_enabled": true
+}
