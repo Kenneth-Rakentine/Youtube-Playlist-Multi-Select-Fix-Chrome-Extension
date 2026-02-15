@@ -1,4 +1,5 @@
 # YouTube Playlist Multi-Select Fix
+<img src="icon.png" width="360">
 
 This Chrome extension restores the old YouTube behavior where the "Save to playlist" menu stays open, allowing you to add a video to multiple playlists at once.
 
